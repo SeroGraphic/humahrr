@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | Hüma HR</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <script defer src="fade.js"></script>
+  <script defer src="menu.js"></script>
+  
+</head>
+<body>
+  <header class="fade-in">
+    <div class="header-inner">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo.png.png" alt="Hüma HR Logo">
+      </a>
+      </div>
+      <button class="menu-toggle" aria-label="Menú">
+  <i class="fas fa-bars"></i>
+</button>
+    </div>
+    <nav>
+  <ul class="nav-links">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="nosotros.html">Nosotros</a></li>
+    <li><a href="servicios.html">Servicios</a></li>
+    <li><a href="equipo.html">Equipo</a></li>
+    <li><a href="contacto.html">Contacto</a></li>
+  </ul>
+</nav>
+  </header>
+<main id="main-content">
+  <section id="servicios-section" class="fade-in">
+  <h1>Nuestros Servicios</h1>
+  <div class="servicios-grid">
+    <div class="servicio-card">
+      <i class="fas fa-search servicio-icon"></i>
+      <h2>SEARCH</h2>
+      <p class="descripcion">
+        Brindamos un proceso dinámico y a medida de nuestros clientes con el fin de resolver los desafíos de talento vinculados al diseño de rol y cobertura de vacantes.
+      </p>
+    </div>
+    <div class="servicio-card">
+      <i class="fas fa-briefcase servicio-icon"></i>
+      <h2>COMPREHENSIVE HR CONSULTING</h2>
+      <p class="descripcion">
+        Brindamos asesoramiento integral en las diversas prácticas de recursos humanos.
+      </p>
+    </div>
+  </div>
+</section>
+</main>
+
+  <footer class="custom-footer fade-in" style="background: #6A829D; color: #fff; text-align: center; padding: 40px 20px 30px; font-size: 1.5rem; font-family: 'Poppins', sans-serif;">
+    <div style="max-width: 900px; margin: auto;">
+      <p style="margin-bottom: 1rem;">Queremos conocerte. <a href="contacto.html" style="color: #fff; font-weight: bold; text-decoration: underline;">Contáctanos.</a></p>
+      <div style="font-size: 1.2rem; margin-bottom: 1rem;">
+        <a href="https://www.linkedin.com/company/h%C3%BCma-hr/about/" target="_blank" style="margin: 0 10px; color: white;"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:humahrconsulting@gmail.com" style="margin: 0 10px; color: white;"><i class="fas fa-envelope" style="margin-right: 6px;"></i>humahrconsulting@gmail.com
+    </a>
+        <a href="https://www.instagram.com/hr.huma/?next=%2F" target="_blank" style="margin: 0 10px; color: white;"><i class="fab fa-instagram"></i></a>
+      </div>
+      <div style="font-size: 0.9rem;">© 2025 Hüma HR Consulting. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+<a href="#" id="scrollTopBtn" style="display: none; position: fixed; bottom: 20px; right: 20px; background: #6A829D; color: white; padding: 10px 14px; border-radius: 50%; text-decoration: none; font-size: 1.2rem; box-shadow: 0 4px 10px rgba(0,0,0,0.2); z-index: 1000; transition: opacity 0.3s ease;">
+  ↑
+</a>
+<script>
+  const scrollBtn = document.getElementById('scrollTopBtn');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300) {
+      scrollBtn.style.display = 'block';
+      scrollBtn.style.opacity = '1';
+    } else {
+      scrollBtn.style.opacity = '0';
+      setTimeout(() => { scrollBtn.style.display = 'none'; }, 300);
+    }
+  });
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.servicio-card').forEach(card => observer.observe(card));
+  });
+
+  
+
+  document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector("header");
+  const main = document.querySelector("main");
+  main.style.paddingTop = `${header.offsetHeight}px`;
+});
+
+  let lastScrollY = window.scrollY;
+  const header = document.querySelector("header");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > lastScrollY && window.scrollY > 100) {
+      header.classList.add("hide-on-scroll");
+    } else {
+      header.classList.remove("hide-on-scroll");
+    }
+    lastScrollY = window.scrollY;
+  });
+  
+</script>
+  <a
+  href="https://wa.me/5491162321856"
+  class="btn-wpp"
+  target="_blank"
+  aria-label="Escribinos por WhatsApp"
+>
+  <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>
