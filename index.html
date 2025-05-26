@@ -34,14 +34,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 60px;
+      padding: 12px 40px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.05);
     }
 
-    .logo img {
-      height: 60px;
-    }
-
+  
     nav ul {
       list-style: none;
       display: flex;
@@ -98,7 +95,7 @@
     }
 
     .btn {
-      background-color: #4a5e6d;
+      background-color: #6A829D;
       color: white;
       padding: 14px 30px;
       border: none;
@@ -109,7 +106,9 @@
     }
 
     .btn:hover {
-      background-color: #607e8b;
+      background-color: transparent;
+      border: 2px solid #6A829D;
+      color: #6A829D;
     }
 
     section:not(.banner-full) {
@@ -187,8 +186,8 @@
 
     .btn-small {
       background-color: transparent;
-      border: 2px solid #4a5e6d;
-      color: #4a5e6d;
+      border: 2px solid #6A829D;
+      color: #6A829D;
       padding: 10px 24px;
       text-decoration: none;
       border-radius: 6px;
@@ -239,18 +238,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px;
+  padding: 8px 30px;
 }
 
 .logo img {
-  height: 60px;
+  height: 100px;
 }
+.banner-overlay h1{
+  color: #FDF9EE;
+  }
 
 .menu-toggle {
   background: none;
   border: none;
   font-size: 24px;
   cursor: pointer;
+  color: #6A829D
 }
  nav ul {
     display: none;
@@ -295,8 +298,8 @@
     <img src="img/banner.png.png" alt="Banner Hüma HR">
     <div class="banner-overlay">
       <h1>Soluciones en Talento y Desarrollo Organizacional</h1>
-      <p>Impulsamos el éxito de las empresas a través del talento humano.</p>
-      <a href="contacto.html" class="btn"><i class="fas fa-paper-plane"></i> Contáctanos</a>
+      <p>Impulsamos el éxito de las empresas a través del talento de las personas.</p>
+      <a href="contacto.html" class="btn"><i class="fas fa-paper-plane"></i> Contactanos</a>
     </div>
   </div>
  <main id="main-content">
@@ -318,7 +321,7 @@
 
       <div id="profileDetail" class="hidden">
         <p>Tenía el deseo de armar un proyecto desde el origen, en un terreno que conozco y disfruto: el mundo de HR.</p>
-        <p>La energía y pasión que me caracterizan me llevaron a iniciar este camino. Siempre buscando la excelencia, con una mirada iterativa de mejora y enfocándome en los vínculos de largo plazo.</p>
+        <p>La energía y pasión que me caracterizan me llevaron a iniciar este camino. Siempre buscando la excelencia, con una mirada iterativa de mejora y enfocándome en las relaciones de largo plazo.</p>
        
       </div>
     </div>
@@ -408,6 +411,9 @@
   color: #6A829D;
 }
 
+.banner-overlay h1{
+  color: #FDF9EE;
+  }
   </style>
 </head>
 <body>
@@ -485,10 +491,10 @@
 
 <footer class="custom-footer fade-in" style="background: #6A829D; color: #fff; text-align: center; padding: 40px 20px 30px; font-size: 1.5rem; font-family: 'Poppins', sans-serif;">
     <div style="max-width: 900px; margin: auto;">
-      <p style="margin-bottom: 1rem;">Queremos conocerte. <a href="contacto.html" style="color: #fff; font-weight: bold; text-decoration: underline;">Contáctanos.</a></p>
+      <p style="margin-bottom: 1rem;">Queremos conocerte. <a href="contacto.html" style="color: #fff; font-weight: bold; text-decoration: underline;">Contactanos.</a></p>
       <div style="font-size: 1.2rem; margin-bottom: 1rem;">
         <a href="https://www.linkedin.com/company/h%C3%BCma-hr/about/" target="_blank" style="margin: 0 10px; color: white;"><i class="fab fa-linkedin"></i></a>
-        <a href="mailto:humahrconsulting@gmail.com" style="margin: 0 10px; color: white;"><i class="fas fa-envelope" style="margin-right: 6px;"></i>humahrconsulting@gmail.com
+        <a href="mailto:info@huma.com.ar" style="margin: 0 10px; color: white;"><i class="fas fa-envelope" style="margin-right: 6px;"></i>info@huma.com.ar
     </a>
         <a href="https://www.instagram.com/hr.huma/?next=%2F" target="_blank" style="margin: 0 10px; color: white;"><i class="fab fa-instagram"></i></a>
       </div>
@@ -501,10 +507,6 @@
 
 </body>
 </html>
-
-
-
-
 
 
 
