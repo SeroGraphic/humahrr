@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css2?&family=Montserrat:wght@300;400;600&display=swap');
 
 /* ========== RESET & GLOBAL ========== */
@@ -11,7 +12,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: #fefcf4;
+  background-color: #FDF9EE;
   font-family: 'Montserrat', sans-serif;
 }
 body {
@@ -30,11 +31,11 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 60px;
+  padding: 1px 40px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.05);
 }
 .logo img {
-  height: 60px;
+  height: 100px;
 }
 nav ul {
   list-style: none;
@@ -49,7 +50,7 @@ nav a {
   font-size: 14px;
   text-transform: none;
   text-decoration: none;
-  color: #2e2e2e;
+  color: #FDF9EE;
   transition: color 0.3s ease;
 }
 
@@ -97,7 +98,10 @@ nav a:hover i {
   font-size: 2.8rem;
   margin-bottom: 0.5em;
   font-weight: bold;
+
 }
+
+
 .banner-overlay p {
   font-size: 1.2rem;
   margin-bottom: 1.5em;
@@ -128,7 +132,7 @@ section:not(.banner-full) {
 }
 h1 {
   font-size: 2.8em;
-  color: #4a5e6d;
+  color: #6A829D;
   margin-bottom: 0.5em;
 }
 h2 {
@@ -350,8 +354,8 @@ section p {
   padding: 20px;
   border-radius: 12px;
   text-align: center;
-  background-color: #4a5e6d;
-  color: #fefcf4;
+  background-color: #6A829D;
+  color: #FDF9EE;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   overflow: hidden;
   transition: all 0.3s ease;
@@ -361,7 +365,7 @@ section p {
 .servicio-card h2 {
   font-size: 1.2rem;
   margin-bottom: 0;
-  color: #fefcf4;
+  color: #FDF9EE;
   text-transform: uppercase;
 }
 
@@ -375,7 +379,7 @@ section p {
 }
 
 .servicio-card:hover {
-  background-color: #607e8b;
+  background-color: #6A829D;
   transform: scale(1.03);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
@@ -445,7 +449,10 @@ padding: 40px 20px 30px;
   margin: 40px auto;
   text-align: center;
 }
-
+.team-member h3{
+  color: #6A829D;
+  font-size: 30px;
+}
 .team-photo {
   width: 160px;
   height: 160px;
@@ -507,7 +514,7 @@ padding: 40px 20px 30px;
 .elegirnos-text h1 {
   text-align: center;
   font-size: 2rem; /* más pequeño */
-  color: #4a5e6d;
+  color: #6A829D;
   margin-bottom: 20px;
 }
 
@@ -702,7 +709,7 @@ section:first-of-type {
   padding-top: 120px; /* o el valor que quede bien con tu header fijo */
 }
 #nosotros, #servicios-section, #equipo, #contacto {
-  padding-top: 120px;
+  padding-top: 200px;
 }
 /* ======================= RESPONSIVE EXTENSION ======================= */
 
@@ -713,7 +720,7 @@ section:first-of-type {
   }
 
   header {
-    padding: 20px 30px;
+    padding: 10px 30px;
   }
 }
 
@@ -727,7 +734,7 @@ section:first-of-type {
   header {
     flex-direction: column;
     align-items: center;
-    padding: 20px;
+    padding: 4px;
   }
 
   .about-container,
@@ -841,9 +848,6 @@ header {
   width: 100%;
 }
 
-
-
-
   nav ul {
     display: none;
     flex-direction: column;
@@ -893,6 +897,7 @@ header.hide-on-scroll {
   font-size: 24px;
   cursor: pointer;
   z-index: 1001;
+  color: #6A829D;
 }
 
 
@@ -905,6 +910,7 @@ header.hide-on-scroll {
     font-size: 1.5rem;
     cursor: pointer;
     z-index: 1001;
+    color: #6A829D
   }
 
  @media screen and (max-width: 768px) {
@@ -978,7 +984,7 @@ header.hide-on-scroll {
     min-height: 220px;
     padding: 20px;
     border-radius: 16px;
-    background: #4a5e6d;
+    background: #6A829D;
     color: #fff;
     text-align: center;
   }
